@@ -48,4 +48,17 @@ public class LoginPage
 		}
 		return null;
 	}
+	public WebElement getCancelButton()
+	{
+		if(driver.getClass().getName().contains("AndroidDriver"))
+		{
+			return driver.findElement(AOSLogin.cancel);
+		}
+		else if(driver.getClass().getName().contains("IOSDriver"))
+		{
+//			TBD
+		}
+		return null;
+	}
+	
 }
