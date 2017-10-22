@@ -49,4 +49,28 @@ public class FlipkartHomePage
 		}
 		return null;
 	}
+	public WebElement autoCompleteSearchTextbox()
+	{
+		if(driver.getClass().getName().contains("AndroidDriver"))
+		{
+			return driver.findElement(AOSFlipkartHome.autoCompletesearchTextbox);
+		}
+		else if(driver.getClass().getName().contains("IOSDriver"))
+		{
+			return null;
+		}
+		return null;
+	}
+	public WebElement autoSuggestionMobile()
+	{
+		if(driver.getClass().getName().contains("AndroidDriver"))
+		{
+			return driver.findElement(AOSFlipkartHome.autoSuggestionMobile);
+		}
+		else if(driver.getClass().getName().contains("IOSDriver"))
+		{
+			return null;
+		}
+		return null;
+	}
 }

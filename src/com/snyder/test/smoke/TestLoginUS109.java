@@ -46,9 +46,4 @@ public class TestLoginUS109
 //		Click on SignIn button
 		login_page.getSignInButton().click();
 	}
-	@AfterMethod
-	public void tearDown()
-	{
-		driver.close();
-	}	
 }
